@@ -6,7 +6,7 @@ const command: ICommand = {
     description: "",
     aliases: ["invoke"],
     syntax: ".summon",
-    async execute(message: Message, _args: string[]) {
+    async execute(message: Message, args?: string[]) {
         console.log(`Command summon started by user ${message.member!.user.tag} 
         in ${message.guild!.name}.`);
         try {

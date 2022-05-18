@@ -19,7 +19,9 @@
     "typescript": "^4.6.3"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "discord.js": "^13.6.0",
-    "glob": "^8.0.1"
+    "glob": "^8.0.1",
+    "node-fetch": "^3.2.4"
   }
 }

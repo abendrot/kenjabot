@@ -9,11 +9,9 @@ const command: ICommand = {
   syntax: ".bestow [role name] [user mention]",
   async execute(message: Message<boolean>, args?: string[]) {
     console.log(`Command bestow started by user ${message.member!.user.tag} in ${message.guild!.name}.`);
-    if (args?.length != 2) {
+      if (args?.length != 2) {
       try {
-        console.log(
-          "Incorrect number of arguments supplied. Stopping execution."
-        );
+        console.log("Incorrect number of arguments supplied. Stopping execution.");
         await message.channel.send(
           `Invalid syntax! Correct syntax: ${this.syntax}`
         );
