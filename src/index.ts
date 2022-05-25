@@ -6,7 +6,7 @@ import { ICommand } from "./utils/interface";
 
 dotenv.config();
 
-const prefix = "j!";
+const prefix = ".";
 
 const client: Discord.Client = new Discord.Client({
   intents: [
