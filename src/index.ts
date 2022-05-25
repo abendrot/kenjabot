@@ -28,7 +28,7 @@ const globPromise = promisify(glob);
 
 (async () => {
   console.log(path.join(__dirname, "commands"));
-  const commandFiles = await globPromise("src\commands");
+  const commandFiles = await globPromise("${__dirname}/commands/**/*.{js,ts}");
   console.log("Loading commands...");
   console.log(commandFiles.length + " commands found.");
   for (const file of commandFiles) {
@@ -83,3 +83,4 @@ client.on('message', async (message: Discord.Message) => {
     console.log(error);
   }
 })();
+
