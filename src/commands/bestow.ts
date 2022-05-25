@@ -86,3 +86,5 @@ const command: ICommand = {
       }
   },
 };
+
+export = command;
